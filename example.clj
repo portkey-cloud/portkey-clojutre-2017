@@ -1,7 +1,7 @@
-(ns portkey-clojutre-2017.core)
-
 (defn welcome []
   "Hello ClojuTre!\n")
+
+(require '[portkey.core :as pk])
 
 (defn hello [name]
   (str name " is " (rand-nth ["incredible" "awesome" "fantastic"])))
@@ -10,4 +10,3 @@
 
 (defn welcome [name]
   (str "Hello ClojuTre!\n" "Visitor count is: " (swap! visitor-count inc)))
-
